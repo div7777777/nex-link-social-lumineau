@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background: linear-gradient(90deg, chartreuse, darkorange, crimson )
+}
+/* haut */
+.haut{
+  background: linear-gradient(45deg, blue, red,black);   
+  animation: 3s infinite color;
+  border-radius: 0 0 50px 50px;
+  border: 4px solid black;
+}
+@keyframes color{
+    0%{
+        position: none;
+        background: linear-gradient(45deg, gray,green,whitesmoke);
+    }
+    30%{
+        position: none;
+        background: linear-gradient(45deg, tomato,#7ee8fa,#191654);
+    }
+    60%{
+        position: none;
+        background: linear-gradient(45deg, #ea52f8,#fcf6cf, darkgray);
+    }
+}
+.adresse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    
+}
+/* icone-adresse */
+.adrhaut{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid;
+    padding: 7px;
+    animation: 10s infinite glisse;
+}
+@keyframes glisse{
+    0%{
+        transform: translateX(50px);
+        background: black;
+    }
+    25%{
+        transform: translateY(100px);
+        background: chartreuse;
+    }
+    50%{
+        transform: translateY(-150px);
+        background: crimson;
+    }
+    75%{
+        transform: translateX(-50px);
+        background: darkmagenta;
+    }
+    100%{
+        transform: translateY(100px);
+        background: darkorange;
+    }
+}
+/* réseaux sociaux link */
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden;
+    
+}
+.instagram{
+    animation: 2s infinite opacity;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+.facebook{
+    animation: 2.5s infinite opacity;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+.linkdin{
+    animation: 3s infinite opacity;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+.twitter{
+    animation: 3.5s infinite opacity;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+        
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+    opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* title */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    border: 4px solid black;
+    padding: 2px;
+    background: linear-gradient(45deg, crimson, darkorange, chartreuse);
+    height: 50px;
+    width: 200px;
+}
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    
+}
+    </style>
+    <div class="haut">
+          <div class="adresse">
+              <div class="adr"><img class="adrhaut" src="a..png" alt=""></div>
+              <div class="adr"><img class="adrhaut" src="b.png" alt=""></div>
+              <div class="adr"><img class="adrhaut" src="c.png" alt=""></div>
+              <div class="adr"><img class="adrhaut" src="d.png" alt=""></div>
+
+          </div>
+
+    </div>
+    <!-- Link -->
+    <div class="title">
+        <h1 class="h1"> Link Social</h1>
+    </div>
+    <!-- réseaux sociaux link -->
+    <div class="items">
+        <img class="twitter" src="2.png" alt="">
+        <img class="linkdin" src="3.png" alt="">
+        <img class="facebook" src="4.png" alt="">
+        <img class="instagram" src="5.png" alt="">
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h2 class="h2">Copyrigth2022 HD</h2>
+
+    </footer>
+    
+</body>
+</html>
